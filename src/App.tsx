@@ -1,7 +1,7 @@
-import TechText from './component/TechText.jsx'
+// @ts-ignore
+import TechText from './component/TechText.jsx';
 import MicroSlats from './component/MicroSlats.tsx';
 import Lanyard from "./component/Lanyard.tsx";
-import ElectricLogo from './component/ElectricLogo';
 import './App.css'
 
 function App() {
