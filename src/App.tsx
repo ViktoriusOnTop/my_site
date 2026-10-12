@@ -3,8 +3,12 @@ import TechText from './component/TechText.jsx';
 import MicroSlats from './component/MicroSlats.tsx';
 import Lanyard from "./component/Lanyard.tsx";
 import './App.css'
+import {useMemo} from "react";
 
 function App() {
+    const textToShow = useMemo(() => {
+        return Math.random() < 0.5 ? "Advait Nair" : "Advaity The Greaty";
+    }, []);
 
   return (
     <>
@@ -52,7 +56,7 @@ function App() {
           </div>
           <div style={{ position: 'absolute', inset: 0, zIndex: 1 }}>
             <TechText
-                text="Advait Nair"
+                text={textToShow}
                 fontWeight={600}
                 fontSize={150}
                 reveal="letter"
